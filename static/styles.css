@@ -1,0 +1,108 @@
+/* General */
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en dispositivos pequeños */
+}
+
+.banner-title {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center; /* Centra el texto en dispositivos pequeños */
+}
+
+.banner-image {
+    height: 200px;
+    width: auto;
+    margin-top: 10px; /* Espacio extra para pantallas pequeñas */
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    background: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de la historia */
+.story-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Texto de la historia */
+.story-text {
+    font-size: 25px;
+    margin: 0;
+}
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 768px) {
+    .banner-title {
+        font-size: 40px; /* Reduce el tamaño del título */
+    }
+
+    .banner-image {
+        height: 120px; /* Reduce la altura de la imagen */
+    }
+
+    .container {
+        width: 90%; /* Aumenta el ancho del contenedor en pantallas pequeñas */
+        padding: 15px; /* Reduce el padding interno */
+    }
+
+    .story-title {
+        font-size: 30px; /* Reduce el tamaño del título de la historia */
+    }
+
+    .story-text {
+        font-size: 18px; /* Reduce el tamaño del texto */
+    }
+}
+
+/* Media Queries para dispositivos muy pequeños */
+@media (max-width: 480px) {
+    .banner-title {
+        font-size: 30px; /* Reduce aún más el tamaño del título */
+    }
+
+    .banner-image {
+        height: 100px; /* Ajusta la imagen para pantallas muy pequeñas */
+    }
+
+    .container {
+        width: 100%; /* El contenedor ocupa todo el ancho */
+        margin-top: 10px; /* Reduce el espacio superior */
+    }
+
+    .story-title {
+        font-size: 24px; /* Ajusta el tamaño del título de la historia */
+    }
+
+    .story-text {
+        font-size: 16px; /* Reduce el tamaño del texto */
+    }
+}
