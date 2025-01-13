@@ -40,7 +40,12 @@ body {
     margin-top: 10px; /* Espacio extra para pantallas pequeñas */
 }
 
-/* Menú */
+/* Menú principal */
+.menu {
+    margin-top: 20px;
+    text-align: center;
+}
+
 .menu-title {
     font-family: 'Chiller', cursive;
     font-size: 145px;
@@ -59,8 +64,8 @@ body {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
+    margin: 10px;
     transition: background-color 0.3s ease;
 }
 
@@ -82,13 +87,29 @@ body {
 .story-title {
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Texto de la historia */
 .story-text {
     font-size: 25px;
-    margin: 0;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+/* Contenedor de imagen */
+.image-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.story-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Media Queries para dispositivos pequeños */
@@ -99,6 +120,15 @@ body {
 
     .banner-image {
         height: 120px; /* Reduce la altura de la imagen */
+    }
+
+    .menu-title {
+        font-size: 100px; /* Reduce el tamaño del título del menú */
+    }
+
+    .menu-button {
+        font-size: 30px; /* Reduce el tamaño de los botones del menú */
+        padding: 15px 30px;
     }
 
     .container {
@@ -123,6 +153,15 @@ body {
 
     .banner-image {
         height: 100px; /* Ajusta la imagen para pantallas muy pequeñas */
+    }
+
+    .menu-title {
+        font-size: 80px; /* Reduce aún más el título del menú */
+    }
+
+    .menu-button {
+        font-size: 24px; /* Ajusta el tamaño de los botones */
+        padding: 10px 20px;
     }
 
     .container {
