@@ -23,7 +23,7 @@ body {
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en dispositivos pequeños */
+    flex-wrap: wrap;
     cursor: pointer; /* Hace clickeable el banner */
 }
 
