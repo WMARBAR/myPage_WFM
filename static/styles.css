@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden; /* Elimina barra blanca horizontal */
+    overflow-x: hidden; /* Evita barras de desplazamiento horizontales */
 }
 
 /* Banner */
@@ -31,41 +31,40 @@ body {
     font-size: 60px;
     font-weight: bold;
     margin: 0;
-    text-align: center; /* Centra el texto en dispositivos pequeños */
+    text-align: center;
 }
 
 .banner-image {
-    height: 200px;
+    height: 150px;
     width: auto;
-    margin-top: 10px; /* Espacio extra para pantallas pequeñas */
+    margin: 10px 0;
 }
 
-/* Menú principal */
+/* Menú */
 .menu {
-    margin-top: 20px;
+    width: 100%;
     text-align: center;
+    margin-top: 20px;
 }
 
 .menu-title {
     font-family: 'Chiller', cursive;
     font-size: 145px;
     color: #000;
-    text-align: center;
     margin: 20px 0;
 }
 
 .menu-button {
     font-family: 'Chiller', cursive;
     font-size: 40px;
-    text-transform: uppercase;
     padding: 20px 40px;
     background-color: #000;
     color: #fff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    display: inline-block;
     margin: 10px;
+    display: inline-block;
     transition: background-color 0.3s ease;
 }
 
@@ -77,13 +76,17 @@ body {
 .container {
     width: 80%;
     background: #fff;
-    margin-top: 20px;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Título de la historia */
+.container h2 {
+    text-align: center;
+}
+
+/* Historia */
 .story-title {
     font-size: 40px;
     font-weight: bold;
@@ -91,15 +94,14 @@ body {
     text-align: center;
 }
 
-/* Texto de la historia */
 .story-text {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.8;
     text-align: justify;
     margin-bottom: 40px;
 }
 
-/* Contenedor de imagen */
+/* Imagen en historias */
 .image-container {
     text-align: center;
     margin-top: 40px;
@@ -112,68 +114,92 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Media Queries para dispositivos pequeños */
-@media (max-width: 768px) {
+/* Media Queries */
+@media (max-width: 1024px) {
     .banner-title {
-        font-size: 40px; /* Reduce el tamaño del título */
+        font-size: 50px;
     }
 
     .banner-image {
-        height: 120px; /* Reduce la altura de la imagen */
+        height: 120px;
     }
 
     .menu-title {
-        font-size: 100px; /* Reduce el tamaño del título del menú */
+        font-size: 120px;
     }
 
     .menu-button {
-        font-size: 30px; /* Reduce el tamaño de los botones del menú */
+        font-size: 35px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .story-title {
+        font-size: 32px;
+    }
+
+    .story-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-title {
+        font-size: 40px;
+    }
+
+    .banner-image {
+        height: 100px;
+    }
+
+    .menu-title {
+        font-size: 100px;
+    }
+
+    .menu-button {
+        font-size: 30px;
         padding: 15px 30px;
     }
 
     .container {
-        width: 90%; /* Aumenta el ancho del contenedor en pantallas pequeñas */
-        padding: 15px; /* Reduce el padding interno */
+        width: 95%;
     }
 
     .story-title {
-        font-size: 30px; /* Reduce el tamaño del título de la historia */
+        font-size: 28px;
     }
 
     .story-text {
-        font-size: 18px; /* Reduce el tamaño del texto */
+        font-size: 16px;
     }
 }
 
-/* Media Queries para dispositivos muy pequeños */
 @media (max-width: 480px) {
     .banner-title {
-        font-size: 30px; /* Reduce aún más el tamaño del título */
+        font-size: 30px;
     }
 
     .banner-image {
-        height: 100px; /* Ajusta la imagen para pantallas muy pequeñas */
+        height: 80px;
     }
 
     .menu-title {
-        font-size: 80px; /* Reduce aún más el título del menú */
+        font-size: 80px;
     }
 
     .menu-button {
-        font-size: 24px; /* Ajusta el tamaño de los botones */
+        font-size: 24px;
         padding: 10px 20px;
     }
 
-    .container {
-        width: 100%; /* El contenedor ocupa todo el ancho */
-        margin-top: 10px; /* Reduce el espacio superior */
-    }
-
     .story-title {
-        font-size: 24px; /* Ajusta el tamaño del título de la historia */
+        font-size: 24px;
     }
 
     .story-text {
-        font-size: 16px; /* Reduce el tamaño del texto */
+        font-size: 14px;
     }
 }
