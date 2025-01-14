@@ -16,12 +16,16 @@ def H_ElDiaQueElSol():
 
 @app.route('/resenas')
 def resenas():
-    return render_template('resenas.html')  # Archivo H_ElDiaQueElSol.html
+    return render_template('resenas.html')  # reseñas.html
 
 
 @app.route('/rese_tfundacion_asimov')
 def rese_tfundacion_asimov():
-    return render_template('rese_tfundacion_asimov.html')  # Archivo H_ElDiaQueElSol.html
+    return render_template('rese_tfundacion_asimov.html')  # rese_tfundacion_asimov.html
+
+@app.route('/rese_frankenstein_mary')
+def rese_frankenstein_mary():
+    return render_template('rese_frankenstein_mary.html')  # Archivo rese_frankenstein_mary
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Usa el puerto de Render o 5000 por defecto
