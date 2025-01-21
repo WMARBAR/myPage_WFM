@@ -27,6 +27,10 @@ def rese_tfundacion_asimov():
 def rese_frankenstein_mary():
     return render_template('rese_frankenstein_mary.html')  # Archivo rese_frankenstein_mary
 
+@app.route('/rese_fwtbt_Heminghway')
+def rese_fwtbt_Heminghway():
+    return render_template('rese_fwtbt_Heminghway.html')  # Archivo rese_fwtbt_Heminghway
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Usa el puerto de Render o 5000 por defecto
     app.run(debug=True, host='0.0.0.0', port=port)  # Cambia host a '0.0.0.0'

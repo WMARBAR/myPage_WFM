@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frankenstein</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='guyfox.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="banner" onclick="location.href='/#menu'">
+        <h1 class="banner-title">B DE BLOG</h1>
+        <img src="{{ url_for('static', filename='guyfox.webp') }}" alt="Blog Logo" class="banner-image">
+    </header>
+    
+    <div class="container">
+        <h2 class="story-title">For whom the bell tols</h2>
+        <div class="story-text">
+            <p>On going...</p>
+            <p>Calificación final ⭐⭐⭐⭐⭐  (5/5)</p>
+
+        </div>
+
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='fwtbt.webp') }}" alt="El Sol Oscurecido" class="story-image">
+        </div>
+    </div>
+</body>
+</html>
