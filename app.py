@@ -14,10 +14,13 @@ def historias():
 def H_ElDiaQueElSol():
     return render_template('H_ElDiaQueElSol.html')  # Archivo H_ElDiaQueElSol.html
 
+@app.route('/H_eLEco')
+def H_eLEco():
+    return render_template('H_eLEco.html')  # Archivo H_eLEco.html
+
 @app.route('/resenas')
 def resenas():
     return render_template('resenas.html')  # reseñas.html
-
 
 @app.route('/rese_tfundacion_asimov')
 def rese_tfundacion_asimov():
