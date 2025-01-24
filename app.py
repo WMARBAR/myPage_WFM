@@ -18,6 +18,10 @@ def H_ElDiaQueElSol():
 def H_eLEco():
     return render_template('H_eLEco.html')  # Archivo H_eLEco.html
 
+@app.route('/H_cyberRevuelta')
+def H_cyberRevuelta():
+    return render_template('H_cyberRevuelta.html')  # Archivo H_cyberRevuelta.html
+
 @app.route('/resenas')
 def resenas():
     return render_template('resenas.html')  # reseñas.html
