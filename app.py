@@ -38,6 +38,10 @@ def rese_frankenstein_mary():
 def rese_fwtbt_Heminghway():
     return render_template('rese_fwtbt_Heminghway.html')  # Archivo rese_fwtbt_Heminghway
 
+@app.route('/rese_trilogiaCosmica_Lewis')
+def rese_trilogiaCosmica_Lewis():
+    return render_template('rese_trilogiaCosmica_Lewis.html')  # Archivo rese_trilogiaCosmica_Lewis
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Usa el puerto de Render o 5000 por defecto
     app.run(debug=True, host='0.0.0.0', port=port)  # Cambia host a '0.0.0.0'
