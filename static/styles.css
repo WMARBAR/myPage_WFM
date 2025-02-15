@@ -89,16 +89,12 @@ body {
 }
 
 /* Contenedor de la historia */
-.story-text {
+.container {
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
-    text-align: justify;
     padding: 20px;
-    line-height: 1.8;
-    word-wrap: break-word; /* Asegura que las palabras largas se ajusten */
-    overflow-wrap: break-word;
-    white-space: normal; /* Evita cortes extraños en líneas */
+    text-align: center;
 }
 
 /* Título de la historia */
@@ -106,8 +102,35 @@ body {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Texto de la historia */
+.story-text {
     width: 100%;
-    margin: 20px 0;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.8;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    font-size: 18px; /* Ajuste para mejorar la legibilidad */
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Imágenes dentro de la historia */
+.story-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Responsividad para móviles */
@@ -154,9 +177,20 @@ body {
     }
 
     .story-text {
-        width: 95%;
+        width: 100%;
         max-width: 100%;
         padding: 15px;
         font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .image-container {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .story-image {
+        max-width: 100%;
+        height: auto;
     }
 }
