@@ -8,8 +8,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <header class="banner" onclick="location.href='/#menu'">
-        <h1 class="banner-title">RESEÑAS</h1>
+    <!-- Banner con menú integrado -->
+    <header class="banner">
+        <div class="banner-content">
+            <h1 class="banner-title">B DE BLOG</h1>
+            <nav class="banner-menu">
+                <button class="menu-button" onclick="location.href='/'">Home</button>
+                <button class="menu-button" onclick="location.href='/historias'">Historias</button>
+                <button class="menu-button" onclick="location.href='/resenas'">Reseñas</button>
+            </nav>
+        </div>
         <img src="{{ url_for('static', filename='guyfox.webp') }}" alt="Blog Logo" class="banner-image">
     </header>
     
