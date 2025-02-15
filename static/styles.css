@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden; /* Evita barras de desplazamiento horizontales */
+    overflow-x: hidden;
 }
 
 /* Banner */
@@ -90,11 +90,14 @@ body {
 
 /* Contenedor de la historia */
 .story-text {
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
     text-align: justify;
     padding: 20px;
     line-height: 1.8;
+    word-break: break-word; /* Evita cortes raros */
+    overflow-wrap: break-word; /* Asegura que las palabras largas no se desborden */
 }
 
 /* Título de la historia */
@@ -147,11 +150,13 @@ body {
     }
 
     .story-title {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .story-text {
-        max-width: 90%;
+        width: 100%; /* Se asegura de que ocupe todo el ancho disponible */
+        max-width: 100%;
         padding: 15px;
+        font-size: 16px; /* Reduce el tamaño del texto para mejor ajuste */
     }
 }
