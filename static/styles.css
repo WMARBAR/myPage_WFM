@@ -29,7 +29,7 @@ body {
 .banner-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Alineado a la derecha */
+    align-items: flex-end;
 }
 
 /* Título del banner */
@@ -84,32 +84,30 @@ body {
     font-size: 120px;
     color: #000;
     margin: 20px 0;
-    text-align: center; /* Asegura que el texto esté centrado */
-    width: 100%; /* Asegura que ocupe el ancho completo del contenedor */
+    text-align: center;
+    width: 100%;
 }
 
 /* Contenedor de la historia */
 .story-text {
-    max-width: 800px; /* Define un ancho máximo para evitar que el texto sea muy amplio */
-    margin: 0 auto; /* Centra el bloque de texto dentro del contenedor */
-    text-align: justify; /* Justifica el texto */
-    padding: 20px; /* Agrega un poco de espacio interno para mayor legibilidad */
-    line-height: 1.8; /* Mejora la legibilidad */
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.8;
 }
 
 /* Título de la historia */
 .story-title {
-    font-size: 36px; /* Ajusta el tamaño del título */
+    font-size: 36px;
     font-weight: bold;
-    text-align: center; /* Centra el título */
-    width: 100%; /* Asegura que ocupe el ancho total */
-    margin: 20px 0; /* Añade un margen superior e inferior */
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
 }
 
 /* Responsividad */
-
-/* Tablets */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .banner {
         flex-direction: column;
         align-items: center;
@@ -133,102 +131,27 @@ body {
 
     .banner-menu {
         margin-top: 15px;
-        flex-wrap: wrap; /* Asegura que el menú no se desborde */
+        flex-wrap: wrap;
         justify-content: center;
+        gap: 10px;
     }
 
     .menu-button {
         font-size: 20px;
         padding: 8px 16px;
+        width: auto;
     }
 
     .menu-title {
-        font-size: 90px;
-    }
-
-    .story-text {
-        max-width: 90%; /* Reduce el ancho para una mejor lectura */
-    }
-}
-
-/* Celulares */
-@media (max-width: 768px) {
-    .banner {
-        flex-direction: column;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .banner-title {
-        font-size: 35px;
-        text-align: center;
-    }
-
-    .banner-image {
-        height: 80px;
-        margin: 0 auto;
-    }
-
-    .banner-menu {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .menu-button {
-        font-size: 18px;
-        padding: 6px 12px;
-        width: 90%; /* Hace que los botones se ajusten al ancho */
-    }
-
-    .menu-title {
-        font-size: 70px;
+        font-size: 80px;
     }
 
     .story-title {
-        font-size: 30px; /* Ajusta el tamaño del título en móviles */
+        font-size: 30px;
     }
 
     .story-text {
-        max-width: 95%; /* Ajusta el ancho del texto */
+        max-width: 90%;
         padding: 15px;
-    }
-}
-
-/* Extra Small Screens (Menos de 480px) */
-@media (max-width: 480px) {
-    .banner {
-        padding: 5px;
-    }
-
-    .banner-title {
-        font-size: 28px;
-    }
-
-    .banner-image {
-        height: 70px;
-    }
-
-    .banner-menu {
-        gap: 5px;
-    }
-
-    .menu-button {
-        font-size: 16px;
-        padding: 5px 10px;
-        width: 100%; /* Los botones ocupan todo el ancho */
-    }
-
-    .menu-title {
-        font-size: 60px;
-    }
-
-    .story-title {
-        font-size: 24px;
-    }
-
-    .story-text {
-        max-width: 100%;
-        padding: 10px;
     }
 }
