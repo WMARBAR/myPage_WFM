@@ -90,14 +90,15 @@ body {
 
 /* Contenedor de la historia */
 .story-text {
-    width: 100%;
+    width: 90%;
     max-width: 800px;
     margin: 0 auto;
     text-align: justify;
     padding: 20px;
     line-height: 1.8;
-    word-break: break-word; /* Evita cortes raros */
-    overflow-wrap: break-word; /* Asegura que las palabras largas no se desborden */
+    word-wrap: break-word; /* Asegura que las palabras largas se ajusten */
+    overflow-wrap: break-word;
+    white-space: normal; /* Evita cortes extraños en líneas */
 }
 
 /* Título de la historia */
@@ -109,7 +110,7 @@ body {
     margin: 20px 0;
 }
 
-/* Responsividad */
+/* Responsividad para móviles */
 @media (max-width: 768px) {
     .banner {
         flex-direction: column;
@@ -123,30 +124,29 @@ body {
     }
 
     .banner-title {
-        font-size: 40px;
+        font-size: 35px;
         text-align: center;
     }
 
     .banner-image {
-        height: 100px;
-        margin-top: 10px;
+        height: 80px;
+        margin: 0 auto;
     }
 
     .banner-menu {
-        margin-top: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
         gap: 10px;
+        margin-top: 10px;
     }
 
     .menu-button {
-        font-size: 20px;
-        padding: 8px 16px;
-        width: auto;
+        font-size: 18px;
+        padding: 6px 12px;
+        width: 90%;
     }
 
     .menu-title {
-        font-size: 80px;
+        font-size: 70px;
     }
 
     .story-title {
@@ -154,9 +154,9 @@ body {
     }
 
     .story-text {
-        width: 100%; /* Se asegura de que ocupe todo el ancho disponible */
+        width: 95%;
         max-width: 100%;
         padding: 15px;
-        font-size: 16px; /* Reduce el tamaño del texto para mejor ajuste */
+        font-size: 16px;
     }
 }
