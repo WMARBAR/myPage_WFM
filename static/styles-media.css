@@ -1,0 +1,146 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Chiller&display=swap');
+
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* Banner fijo y ajustado para móviles */
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Apila el contenido en móviles */
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor del título y menú en móviles */
+.banner-content {
+    align-items: center;
+    text-align: center;
+}
+
+/* Título del banner */
+.banner-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Logo más pequeño en móviles */
+.banner-image {
+    height: 60px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+/* Menú más accesible en móviles */
+.banner-menu {
+    display: flex;
+    flex-direction: column; /* Apila los botones en móviles */
+    gap: 10px;
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Botones del menú */
+.menu-button {
+    font-family: 'Chiller', cursive;
+    font-size: 18px;
+    padding: 8px 12px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 90%; /* Hace que los botones sean más anchos */
+}
+
+.menu-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Espacio para que el contenido no quede tapado por el menú */
+.container {
+    width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    margin-top: 140px; /* Asegurar que el contenido no quede cubierto */
+}
+
+/* Título de la historia */
+.story-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Texto de la historia */
+.story-text {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 10px;
+    line-height: 1.6;
+    font-size: 16px; /* Texto más pequeño para mejorar la lectura */
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Imágenes dentro de la historia */
+.story-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilo para el autor */
+.story-author {
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 15px;
+}
+
+/* Ajustar el título "¡Bienvenidos!" */
+.menu-container {
+    text-align: center;
+    margin-top: 180px; /* Más espacio para evitar que se sobreponga con el banner */
+}
+
+.menu-title {
+    font-family: 'Chiller', cursive;
+    font-size: 60px; /* Más pequeño en móviles */
+    color: #000;
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+}
