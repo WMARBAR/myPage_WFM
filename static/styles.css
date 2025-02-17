@@ -13,8 +13,11 @@ body {
     overflow-x: hidden;
 }
 
-/* Banner */
+/* Banner fijo en la parte superior */
 .banner {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     background-color: #000;
     color: #fff;
@@ -23,6 +26,8 @@ body {
     align-items: center;
     padding: 20px 40px;
     box-sizing: border-box;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para separar del contenido */
 }
 
 /* Contenedor del título y menú en el banner */
@@ -76,8 +81,9 @@ body {
 /* Contenedor del menú principal */
 .menu-container {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 160px; /* Ajusta este valor según sea necesario */
 }
+
 
 .menu-title {
     font-family: 'Chiller', cursive;
@@ -88,13 +94,14 @@ body {
     width: 100%;
 }
 
-/* Contenedor de la historia */
+/* Ajuste del contenido para evitar ser tapado por el menú fijo */
 .container {
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
+    margin-top: 120px; /* Evita que el contenido quede cubierto por el menú */
 }
 
 /* Título de la historia */
@@ -131,6 +138,13 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+.story-author {
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
 }
 
 /* Responsividad para móviles */
@@ -192,5 +206,9 @@ body {
     .story-image {
         max-width: 100%;
         height: auto;
+    }
+
+    .container {
+        margin-top: 140px; /* Ajuste extra en móviles */
     }
 }
