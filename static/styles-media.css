@@ -13,7 +13,7 @@ body {
     overflow-x: hidden;
 }
 
-/* 📌 Banner fijo y más pequeño en móviles */
+/* 📌 Banner fijo y más compacto en móviles */
 .banner {
     position: fixed;
     top: 0;
@@ -22,15 +22,15 @@ body {
     background-color: #000;
     color: #fff;
     display: flex;
-    flex-direction: column; /* Apila el contenido en móviles */
+    flex-direction: column; /* Apila el contenido */
     align-items: center;
-    padding: 10px;
+    padding: 8px;
     box-sizing: border-box;
     z-index: 1000;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* 📌 Contenedor del título y menú en móviles */
+/* 📌 Contenedor del título y menú */
 .banner-content {
     align-items: center;
     text-align: center;
@@ -38,40 +38,41 @@ body {
 
 /* 📌 Título del banner más pequeño */
 .banner-title {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bold;
     margin: 5px 0;
 }
 
-/* 📌 Logo más pequeño en móviles */
+/* 📌 Logo reducido para que no desaparezca en móviles */
 .banner-image {
-    height: 50px;
+    height: 45px;
     width: auto;
-    margin-bottom: 8px;
+    display: block;
+    margin-bottom: 5px;
 }
 
-/* 📌 Menú compacto en móviles */
+/* 📌 Menú compacto */
 .banner-menu {
     display: flex;
     flex-direction: column; /* Apila los botones */
-    gap: 8px;
+    gap: 5px;
     margin-top: 5px;
     width: 100%;
     text-align: center;
 }
 
-/* 📌 Botones del menú más compactos */
+/* 📌 Botones más pequeños */
 .menu-button {
     font-family: 'Chiller', cursive;
-    font-size: 16px;
-    padding: 6px 10px;
+    font-size: 14px; /* Reducido */
+    padding: 4px 8px; /* Más compacto */
     background-color: #fff;
     color: #000;
     border: 1px solid #000;
-    border-radius: 6px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    width: 85%; /* Hace que los botones sean más anchos pero no ocupen toda la pantalla */
+    width: 75%; /* Más compacto y mejor alineado */
 }
 
 .menu-button:hover {
@@ -79,68 +80,68 @@ body {
     color: #fff;
 }
 
-/* 📌 Espacio para que el contenido no quede tapado por el menú */
+/* 📌 Espacio para que el contenido no quede tapado */
 .container {
     width: 95%;
     max-width: 100%;
     margin: 0 auto;
     padding: 10px;
     text-align: center;
-    margin-top: 130px; /* Ajustar para que no se sobreponga con el menú */
+    margin-top: 120px; /* Ajustado para que el banner no lo tape */
 }
 
-/* 📌 Título de la historia más pequeño */
+/* 📌 Título de la historia */
 .story-title {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
 }
 
-/* 📌 Texto de la historia con mejor espaciado */
+/* 📌 Texto con mejor espaciado */
 .story-text {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
     text-align: justify;
     padding: 8px;
-    line-height: 1.5;
-    font-size: 15px; /* Reduce el tamaño del texto para mejor lectura */
+    line-height: 1.4;
+    font-size: 14px; /* Más pequeño */
 }
 
 /* 📌 Contenedor de la imagen */
 .image-container {
     width: 100%;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
-/* 📌 Imágenes con bordes más suaves */
+/* 📌 Imágenes más pequeñas */
 .story-image {
     max-width: 100%;
     height: auto;
-    border-radius: 6px;
+    border-radius: 5px;
 }
 
-/* 📌 Estilo para el autor */
+/* 📌 Autor */
 .story-author {
     font-style: italic;
     font-weight: bold;
     text-align: right;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
-/* 📌 Ajustar el título "¡Bienvenidos!" */
+/* 📌 Ajuste del título "¡Bienvenidos!" */
 .menu-container {
     text-align: center;
-    margin-top: 140px; /* Ajuste para que no quede pegado al banner */
+    margin-top: 120px; /* Más bajo para que no lo tape el banner */
 }
 
 .menu-title {
     font-family: 'Chiller', cursive;
-    font-size: 50px; /* Más pequeño en móviles */
+    font-size: 40px; /* Reducido */
     color: #000;
-    margin: 15px 0;
+    margin: 10px 0;
     text-align: center;
     width: 100%;
 }
