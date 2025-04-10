@@ -42,6 +42,10 @@ def rese_fwtbt_Heminghway():
 def rese_trilogiaCosmica_Lewis():
     return render_template('rese_trilogiaCosmica_Lewis.html')  # Archivo rese_trilogiaCosmica_Lewis
 
+@app.route('/rese_ElMonje_Sharma')
+def rese_ElMonje_Sharma():
+    return render_template('rese_ElMonje_Sharma.html')  # Archivo rese_ElMonje_Sharma
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Usa el puerto de Render o 5000 por defecto
     app.run(debug=True, host='0.0.0.0', port=port)  # Cambia host a '0.0.0.0'
