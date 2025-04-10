@@ -54,6 +54,11 @@ def rese_Vuelta80dias_Verne():
 def rese_1984_Orwell():
     return render_template('rese_1984_Orwell.html')  # Archivo rese_1984_Orwell
 
+@app.route('/rese_JenkyllHyde_Stevenson')
+def rese_JenkyllHyde_Stevenson():
+    return render_template('rese_JenkyllHyde_Stevenson.html')  # Archivo rese_JenkyllHyde_Stevenson
+
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Usa el puerto de Render o 5000 por defecto
     app.run(debug=True, host='0.0.0.0', port=port)  # Cambia host a '0.0.0.0'
