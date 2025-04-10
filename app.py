@@ -58,6 +58,10 @@ def rese_1984_Orwell():
 def rese_JenkyllHyde_Stevenson():
     return render_template('rese_JenkyllHyde_Stevenson.html')  # Archivo rese_JenkyllHyde_Stevenson
 
+@app.route('/rese_NaranjaMecanica_Burgess')
+def rese_NaranjaMecanica_Burgess():
+    return render_template('rese_NaranjaMecanica_Burgess.html')  # Archivo rese_NaranjaMecanica_Burgess
+
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Usa el puerto de Render o 5000 por defecto
