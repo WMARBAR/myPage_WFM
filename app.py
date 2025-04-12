@@ -66,6 +66,10 @@ def rese_NaranjaMecanica_Burgess():
 def rese_Kybalion_Hermes():
     return render_template('rese_Kybalion_Hermes.html')  # Archivo rese_Kybalion_Hermes
 
+@app.route('/rese_CrimenCast_FDevsky')
+def rese_CrimenCast_FDevsky():
+    return render_template('rese_CrimenCast_FDevsky.html')  # Archivo rese_CrimenCast_FDevsky
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Usa el puerto de Render o 5000 por defecto
     app.run(debug=True, host='0.0.0.0', port=port)  # Cambia host a '0.0.0.0'
