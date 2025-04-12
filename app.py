@@ -70,6 +70,13 @@ def rese_Kybalion_Hermes():
 def rese_CrimenCast_FDevsky():
     return render_template('rese_CrimenCast_FDevsky.html')  # Archivo rese_CrimenCast_FDevsky
 
+
+@app.route('/rese_ViajeCentro_Verne')
+def rese_ViajeCentro_Verne():
+    return render_template('rese_ViajeCentro_Verne.html')  # Archivo rese_ViajeCentro_Verne
+
+
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Usa el puerto de Render o 5000 por defecto
     app.run(debug=True, host='0.0.0.0', port=port)  # Cambia host a '0.0.0.0'
