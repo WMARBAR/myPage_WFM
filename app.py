@@ -75,6 +75,10 @@ def rese_CrimenCast_FDevsky():
 def rese_ViajeCentro_Verne():
     return render_template('rese_ViajeCentro_Verne.html')  # Archivo rese_ViajeCentro_Verne
 
+@app.route('/rese_PoderAhora_Eckhart')
+def rese_PoderAhora_Eckhart():
+    return render_template('rese_PoderAhora_Eckhart.html')  # Archivo rese_PoderAhora_Eckhart
+
 
 
 if __name__ == '__main__':
