@@ -62,6 +62,9 @@ def rese_JenkyllHyde_Stevenson():
 def rese_NaranjaMecanica_Burgess():
     return render_template('rese_NaranjaMecanica_Burgess.html')  # Archivo rese_NaranjaMecanica_Burgess
 
+@app.route('/rese_Kybalion_Hermes')
+def rese_Kybalion_Hermes():
+    return render_template('rese_Kybalion_Hermes.html')  # Archivo rese_Kybalion_Hermes
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Usa el puerto de Render o 5000 por defecto
