@@ -79,7 +79,9 @@ def rese_ViajeCentro_Verne():
 def rese_PoderAhora_Eckhart():
     return render_template('rese_PoderAhora_Eckhart.html')  # Archivo rese_PoderAhora_Eckhart
 
-
+@app.route('/rese_MundoFeliz_Huxley')
+def rese_MundoFeliz_Huxley():
+    return render_template('rese_MundoFeliz_Huxley.html')  # Archivo rese_MundoFeliz_Huxley
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Usa el puerto de Render o 5000 por defecto
