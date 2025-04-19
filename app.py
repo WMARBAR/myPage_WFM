@@ -83,6 +83,10 @@ def rese_PoderAhora_Eckhart():
 def rese_MundoFeliz_Huxley():
     return render_template('rese_MundoFeliz_Huxley.html')  # Archivo rese_MundoFeliz_Huxley
 
+@app.route('/rese_preacher_EnnisDillon')
+def rese_preacher_EnnisDillon():
+    return render_template('rese_preacher_EnnisDillon.html')  # Archivo rese_preacher_EnnisDillon
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Usa el puerto de Render o 5000 por defecto
     app.run(debug=True, host='0.0.0.0', port=port)  # Cambia host a '0.0.0.0'
