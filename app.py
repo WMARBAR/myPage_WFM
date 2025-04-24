@@ -95,6 +95,11 @@ def rese_Transmetropolitan_WarrenEllis():
 def rese_PetSematary_King():
     return render_template('rese_PetSematary_King.html')  # Archivo rese_PetSematary_King
 
+@app.route('/rese_2001Odisea_Cclarke')
+def rese_2001Odisea_Cclarke():
+    return render_template('rese_2001Odisea_Cclarke.html')  # Archivo rese_2001Odisea_Cclarke
+
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Usa el puerto de Render o 5000 por defecto
     app.run(debug=True, host='0.0.0.0', port=port)  # Cambia host a '0.0.0.0'
