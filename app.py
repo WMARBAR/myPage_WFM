@@ -91,6 +91,9 @@ def rese_preacher_EnnisDillon():
 def rese_Transmetropolitan_WarrenEllis():
     return render_template('rese_Transmetropolitan_WarrenEllis.html')  # Archivo rese_Transmetropolitan_WarrenEllis
 
+@app.route('/rese_PetSematary_King')
+def rese_PetSematary_King():
+    return render_template('rese_PetSematary_King.html')  # Archivo rese_PetSematary_King
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Usa el puerto de Render o 5000 por defecto
