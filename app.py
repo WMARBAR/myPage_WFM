@@ -99,6 +99,10 @@ def rese_PetSematary_King():
 def rese_2001Odisea_Cclarke():
     return render_template('rese_2001Odisea_Cclarke.html')  # Archivo rese_2001Odisea_Cclarke
 
+@app.route('/rese_FightClub_Palaniuk')
+def rese_FightClub_Palaniuk():
+    return render_template('rese_FightClub_Palaniuk.html')  # Archivo rese_FightClub_Palaniuk
+
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Usa el puerto de Render o 5000 por defecto
