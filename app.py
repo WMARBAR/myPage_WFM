@@ -107,6 +107,13 @@ def rese_FightClub_Palaniuk():
 def rese_trenAzul_Agata():
     return render_template('rese_trenAzul_Agata.html')  # Archivo rese_trenAzul_Agata
 
+@app.route('/rese_Psicoanalista_Katzenbach')
+def rese_Psicoanalista_Katzenbach():
+    return render_template('rese_Psicoanalista_Katzenbach.html')  # Archivo rese_Psicoanalista_Katzenbach
+
+
+
+
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Usa el puerto de Render o 5000 por defecto
