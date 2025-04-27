@@ -112,6 +112,9 @@ def rese_Psicoanalista_Katzenbach():
     return render_template('rese_Psicoanalista_Katzenbach.html')  # Archivo rese_Psicoanalista_Katzenbach
 
 
+@app.route('/rese_SimboloPerdido_Brown')
+def rese_SimboloPerdido_Brown():
+    return render_template('rese_SimboloPerdido_Brown.html')  # Archivo rese_SimboloPerdido_Brown
 
 
 
