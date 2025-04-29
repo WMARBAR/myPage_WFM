@@ -116,7 +116,9 @@ def rese_Psicoanalista_Katzenbach():
 def rese_SimboloPerdido_Brown():
     return render_template('rese_SimboloPerdido_Brown.html')  # Archivo rese_SimboloPerdido_Brown
 
-
+@app.route('/rese_ElHombreMasRicoBabilonia_Clason')
+def rese_ElHombreMasRicoBabilonia_Clason():
+    return render_template('rese_ElHombreMasRicoBabilonia_Clason.html')  # Archivo rese_ElHombreMasRicoBabilonia_Clason
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Usa el puerto de Render o 5000 por defecto
